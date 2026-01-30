@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Johnson - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .contact-info span {
+            display: flex;
+            align-items: center;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job, .education-item, .project {
+            margin-bottom: 20px;
+        }
+        
+        .job-header, .education-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .job-title, .degree {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        
+        .company, .school {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 5px;
+        }
+        
+        .date {
+            color: #7f8c8d;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            color: #444;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 10px;
+        }
+        
+        .skill-category strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .skill-category span {
+            color: #555;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .job-header, .education-header, .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sarah Johnson</h1>
+            <div class="title">Software Engineer</div>
+            <div class="contact-info">
+                <span>📧 sarah.johnson@email.com</span>
+                <span>📱 (555) 123-4567</span>
+                <span>📍 San Francisco, CA</span>
+                <span>💼 linkedin.com/in/sarahjohnson</span>
+                <span>🔗 github.com/sarahjdev</span>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Professional Summary</h2>
+            <p>Results-driven Software Engineer with 5+ years of experience building scalable web applications and leading cross-functional teams. Proficient in full-stack development with expertise in React, Node.js, and cloud technologies. Proven track record of delivering high-quality solutions that improve user experience and drive business growth.</p>
+        </section>
+
+        <section class="experience">
+            <h2>Work Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Senior Software Engineer</div>
+                        <div class="company">TechCorp Solutions, San Francisco, CA</div>
+                    </div>
+                    <div class="date">Jan 2022 - Present</div>
+                </div>
+                <ul>
+                    <li>Led development of customer-facing dashboard serving 50,000+ daily active users, improving load time by 40%</li>
+                    <li>Architected microservices infrastructure using Node.js and Docker, reducing deployment time by 60%</li>
+                    <li>Mentored team of 4 junior developers, conducting code reviews and establishing best practices</li>
+                    <li>Collaborated with product managers and designers to implement new features based on user feedback</li>
+                    <li>Reduced production bugs by 35% through implementation of comprehensive testing strategy</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Software Engineer</div>
+                        <div class="company">Digital Innovations Inc., San Jose, CA</div>
+                    </div>
+                    <div class="date">Jun 2020 - Dec 2021</div>
+                </div>
+                <ul>
+                    <li>Developed RESTful APIs using Express.js and MongoDB, handling 1M+ requests per day</li>
+                    <li>Built responsive front-end interfaces with React and TypeScript, ensuring cross-browser compatibility</li>
+                    <li>Implemented CI/CD pipelines using Jenkins and AWS, automating deployment processes</li>
+                    <li>Optimized database queries, reducing average response time from 800ms to 200ms</li>
+                    <li>Participated in agile ceremonies and contributed to sprint planning and retrospectives</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <div class="job-title">Junior Developer</div>
+                        <div class="company">StartUp Labs, Mountain View, CA</div>
+                    </div>
+                    <div class="date">Aug 2019 - May 2020</div>
+                </div>
+                <ul>
+                    <li>Assisted in developing e-commerce platform features using React and Redux</li>
+                    <li>Fixed bugs and improved code quality through peer code reviews</li>
+                    <li>Wrote unit tests achieving 85% code coverage using Jest and React Testing Library</li>
+                    <li>Collaborated with UX team to implement accessible and user-friendly interfaces</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Key Projects</h2>
+            
+            <div class="project">
+                <div class="project-header">
+                    <div class="job-title">Real-Time Analytics Dashboard</div>
+                    <div class="date">2023</div>
+                </div>
+                <ul>
+                    <li>Built real-time data visualization dashboard using React, D3.js, and WebSocket connections</li>
+                    <li>Processed and displayed live metrics from multiple data sources with sub-second latency</li>
+                    <li>Implemented role-based access control and custom reporting features</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <div class="job-title">Inventory Management System</div>
+                    <div class="date">2022</div>
+                </div>
+                <ul>
+                    <li>Designed and developed full-stack application for warehouse inventory tracking</li>
+                    <li>Integrated barcode scanning functionality and automated reorder notifications</li>
+                    <li>Reduced inventory discrepancies by 70% through improved tracking mechanisms</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <div>
+                        <div class="degree">Bachelor of Science in Computer Science</div>
+                        <div class="school">University of California, Berkeley</div>
+                    </div>
+                    <div class="date">Graduated: May 2019</div>
+                </div>
+                <p>GPA: 3.7/4.0 | Dean's List (4 semesters)</p>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <strong>Languages:</strong>
+                    <span>JavaScript, TypeScript, Python, Java, SQL, HTML/CSS</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Frameworks & Libraries:</strong>
+                    <span>React, Node.js, Express.js, Redux, Next.js, Vue.js</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Databases:</strong>
+                    <span>MongoDB, PostgreSQL, MySQL, Redis</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Tools & Platforms:</strong>
+                    <span>Git, Docker, Kubernetes, AWS, Jenkins, Jira</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Testing:</strong>
+                    <span>Jest, Mocha, Cypress, React Testing Library</span>
+                </div>
+                <div class="skill-category">
+                    <strong>Methodologies:</strong>
+                    <span>Agile/Scrum, CI/CD, REST APIs, Microservices</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Developer – Associate (2023)</li>
+                <li>Professional Scrum Master I (PSM I) (2022)</li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
